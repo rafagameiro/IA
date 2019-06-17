@@ -1,0 +1,287 @@
+1. Arad - Bucharest
+
+ - Breadth First Search
+ 
+	Node Expansions: 8
+	Nodes Generated: 21
+	State Repetitions: 4
+	Runtime (ms):  2.067 
+	| Arad      |    0 | [Arad, Sibiu] -> 221
+	| Sibiu     |  221 | [Sibiu, Fagaras] -> 65
+	| Fagaras   |  286 | [Fagaras, Bucharest] -> 180
+	| Bucharest |  466 | 
+	
+ - Depth First Search
+ 
+	Node Expansions: 3
+	Nodes Generated: 9
+	State Repetitions: 1
+	Runtime (ms):  3.947 
+	| Arad      |    0 | [Arad, Sibiu] -> 221
+	| Sibiu     |  221 | [Sibiu, Fagaras] -> 65
+	| Fagaras   |  286 | [Fagaras, Bucharest] -> 180
+	| Bucharest |  466 |
+	
+ - Uniform Cost Search
+ 
+	Node Expansions: 12
+	Nodes Generated: 31
+	State Repetitions: 17
+	Runtime (ms):  6.295 
+	| Arad      |    0 | [Arad, Sibiu] -> 221
+	| Sibiu     |  221 | [Sibiu, R. Vilcea] -> 79
+	| R. Vilcea |  300 | [R. Vilcea, Pitesti] -> 47
+	| Pitesti   |  347 | [Pitesti, Bucharest] -> 108
+	| Bucharest |  455 |
+	
+ - Greedy Searh
+ 
+	Node Expansions: 4
+	Nodes Generated: 14
+	State Repetitions: 0
+	Runtime (ms):  2.154 
+	| Arad      |    0 | [Arad, Sibiu] -> 221
+	| Sibiu     |  221 | [Sibiu, R. Vilcea] -> 79
+	| R. Vilcea |  300 | [R. Vilcea, Pitesti] -> 47
+	| Pitesti   |  347 | [Pitesti, Bucharest] -> 108
+	| Bucharest |  455 | 
+	
+ - A Star Search
+ 
+	Node Expansions: 4
+	Nodes Generated: 14
+	State Repetitions: 0
+	Runtime (ms):  1.868 
+	| Arad      |    0 | [Arad, Sibiu] -> 221
+	| Sibiu     |  221 | [Sibiu, R. Vilcea] -> 79
+	| R. Vilcea |  300 | [R. Vilcea, Pitesti] -> 47
+	| Pitesti   |  347 | [Pitesti, Bucharest] -> 108
+	| Bucharest |  455 | 	
+	
+	
+2. Bucharest - Oradea
+
+ - Depth First Search
+ 
+	Node Expansions: 14
+	Nodes Generated: 38
+	State Repetitions: 18
+	Runtime (ms):  2.003 
+	| Bucharest |    0 | [Bucharest, Fagaras] -> 180
+	| Fagaras   |  180 | [Fagaras, Sibiu] -> 65
+	| Sibiu     |  245 | [Sibiu, Arad] -> 221
+	| Arad      |  466 | [Arad, Zerind] -> 51
+	| Zerind    |  517 | [Zerind, Oradea] -> 56
+	| Oradea    |  573 |   
+	
+ - Breadth First Search
+ 
+	Node Expansions: 14
+	Nodes Generated: 38
+	State Repetitions: 18
+	Runtime (ms):  2.003 
+	| Bucharest |    0 | [Bucharest, Fagaras] -> 180
+	| Fagaras   |  180 | [Fagaras, Sibiu] -> 65
+	| Sibiu     |  245 | [Sibiu, Arad] -> 221
+	| Arad      |  466 | [Arad, Zerind] -> 51
+	| Zerind    |  517 | [Zerind, Oradea] -> 56
+	| Oradea    |  573 | 
+	
+ - Uniform Cost Search
+ 
+ 	Node Expansions: 16
+	Nodes Generated: 38
+	State Repetitions: 16
+	Runtime (ms):  1.892 
+	| Bucharest |    0 | [Bucharest, Pitesti] -> 108
+	| Pitesti   |  108 | [Pitesti, R. Vilcea] -> 47
+	| R. Vilcea |  155 | [R. Vilcea, Sibiu] -> 79
+	| Sibiu     |  234 | [Sibiu, Oradea] -> 218
+	| Oradea    |  452 | 
+
+ - Greedy Search
+
+	Node Expansions: 3
+	Nodes Generated: 11
+	State Repetitions: 0
+	Runtime (ms):  1.504 
+	| Bucharest |    0 | [Bucharest, Fagaras] -> 180
+	| Fagaras   |  180 | [Fagaras, Sibiu] -> 65
+	| Sibiu     |  245 | [Sibiu, Oradea] -> 218
+	| Oradea    |  463 | 
+
+ - A Star Search
+ 
+ 	Node Expansions: 5
+	Nodes Generated: 17
+	State Repetitions: 0
+	Runtime (ms):  2.646 
+	| Bucharest |    0 | [Bucharest, Pitesti] -> 108
+	| Pitesti   |  108 | [Pitesti, R. Vilcea] -> 47
+	| R. Vilcea |  155 | [R. Vilcea, Sibiu] -> 79
+	| Sibiu     |  234 | [Sibiu, Oradea] -> 218
+	| Oradea    |  452 | 
+	
+
+3. Oradea - Bucharest
+
+ - Depth First Search
+ 
+	Node Expansions: 9
+	Nodes Generated: 23
+	State Repetitions: 3
+	Runtime (ms):  2.151 
+	| Oradea    |    0 | [Oradea, Sibiu] -> 218
+	| Sibiu     |  218 | [Sibiu, Arad] -> 221
+	| Arad      |  439 | [Arad, Timisoara] -> 49
+	| Timisoara |  488 | [Timisoara, Lugoj] -> 54
+	| Lugoj     |  542 | [Lugoj, Mehadia] -> 94
+	| Mehadia   |  636 | [Mehadia, Dobreta] -> 37
+	| Dobreta   |  673 | [Dobreta, Craiova] -> 96
+	| Craiova   |  769 | [Craiova, Pitesti] -> 103
+	| Pitesti   |  872 | [Pitesti, Bucharest] -> 108
+	| Bucharest |  980 | 	
+	
+ - Breadth First Search
+ 
+	Node Expansions: 7
+	Nodes Generated: 19
+	State Repetitions: 5
+	Runtime (ms):  1.196 
+	| Oradea    |    0 | [Oradea, Sibiu] -> 218
+	| Sibiu     |  218 | [Sibiu, Fagaras] -> 65
+	| Fagaras   |  283 | [Fagaras, Bucharest] -> 180
+	| Bucharest |  463 | 	
+	
+ - Uniform Cost Search
+ 
+	Node Expansions: 12
+	Nodes Generated: 31
+	State Repetitions: 14
+	Runtime (ms):  3.202 
+	| Oradea    |    0 | [Oradea, Sibiu] -> 218
+	| Sibiu     |  218 | [Sibiu, R. Vilcea] -> 79
+	| R. Vilcea |  297 | [R. Vilcea, Pitesti] -> 47
+	| Pitesti   |  344 | [Pitesti, Bucharest] -> 108
+	| Bucharest |  452 | 
+	
+ - Greedy Search
+
+	Node Expansions: 4
+	Nodes Generated: 13
+	State Repetitions: 0
+	Runtime (ms):  2.110 
+	| Oradea    |    0 | [Oradea, Sibiu] -> 218
+	| Sibiu     |  218 | [Sibiu, R. Vilcea] -> 79
+	| R. Vilcea |  297 | [R. Vilcea, Pitesti] -> 47
+	| Pitesti   |  344 | [Pitesti, Bucharest] -> 108
+	| Bucharest |  452 |
+	
+ - A Star Search
+ 
+ 	Node Expansions: 4
+	Nodes Generated: 13
+	State Repetitions: 0
+	Runtime (ms):  2.028 
+	| Oradea    |    0 | [Oradea, Sibiu] -> 218
+	| Sibiu     |  218 | [Sibiu, R. Vilcea] -> 79
+	| R. Vilcea |  297 | [R. Vilcea, Pitesti] -> 47
+	| Pitesti   |  344 | [Pitesti, Bucharest] -> 108
+	| Bucharest |  452 |  
+
+
+4. Timisoara - Neamt
+
+ - Depth First Search
+ 
+	Node Expansions: 22
+	Nodes Generated: 53
+	State Repetitions: 23
+	Runtime (ms):  2.005 
+	| Timisoara |    0 | [Timisoara, Arad] -> 49
+	| Arad      |   49 | [Arad, Sibiu] -> 221
+	| Sibiu     |  270 | [Sibiu, Fagaras] -> 65
+	| Fagaras   |  335 | [Fagaras, Bucharest] -> 180
+	| Bucharest |  515 | [Bucharest, Urziceni] -> 52
+	| Urziceni  |  567 | [Urziceni, Vaslui] -> 229
+	| Vaslui    |  796 | [Vaslui, Iasi] -> 58
+	| Iasi      |  854 | [Iasi, Neamt] -> 94
+	| Neamt     |  948 | 
+	
+ - Breadth First Search
+ 
+	Node Expansions: 19
+	Nodes Generated: 46
+	State Repetitions: 25
+	Runtime (ms):  1.264 
+	| Timisoara |    0 | [Timisoara, Arad] -> 49
+	| Arad      |   49 | [Arad, Sibiu] -> 221
+	| Sibiu     |  270 | [Sibiu, Fagaras] -> 65
+	| Fagaras   |  335 | [Fagaras, Bucharest] -> 180
+	| Bucharest |  515 | [Bucharest, Urziceni] -> 52
+	| Urziceni  |  567 | [Urziceni, Vaslui] -> 229
+	| Vaslui    |  796 | [Vaslui, Iasi] -> 58
+	| Iasi      |  854 | [Iasi, Neamt] -> 94
+	| Neamt     |  948 |
+	
+ - Uniform Cost Search
+ 
+	Node Expansions: 19
+	Nodes Generated: 46
+	State Repetitions: 25
+	Runtime (ms):  1.800 
+	| Timisoara |    0 | [Timisoara, Lugoj] -> 54
+	| Lugoj     |   54 | [Lugoj, Mehadia] -> 94
+	| Mehadia   |  148 | [Mehadia, Dobreta] -> 37
+	| Dobreta   |  185 | [Dobreta, Craiova] -> 96
+	| Craiova   |  281 | [Craiova, Pitesti] -> 103
+	| Pitesti   |  384 | [Pitesti, Bucharest] -> 108
+	| Bucharest |  492 | [Bucharest, Urziceni] -> 52
+	| Urziceni  |  544 | [Urziceni, Vaslui] -> 229
+	| Vaslui    |  773 | [Vaslui, Iasi] -> 58
+	| Iasi      |  831 | [Iasi, Neamt] -> 94
+	| Neamt     |  925 |  
+	
+ - Greedy Search
+ 
+	Node Expansions: 13
+	Nodes Generated: 35
+	State Repetitions: 6
+	Runtime (ms):  3.753 
+	| Timisoara |    0 | [Timisoara, Lugoj] -> 54
+	| Lugoj     |   54 | [Lugoj, Mehadia] -> 94
+	| Mehadia   |  148 | [Mehadia, Dobreta] -> 37
+	| Dobreta   |  185 | [Dobreta, Craiova] -> 96
+	| Craiova   |  281 | [Craiova, R. Vilcea] -> 96
+	| R. Vilcea |  377 | [R. Vilcea, Sibiu] -> 79
+	| Sibiu     |  456 | [Sibiu, Fagaras] -> 65
+	| Fagaras   |  521 | [Fagaras, Bucharest] -> 180
+	| Bucharest |  701 | [Bucharest, Urziceni] -> 52
+	| Urziceni  |  753 | [Urziceni, Vaslui] -> 229
+	| Vaslui    |  982 | [Vaslui, Iasi] -> 58
+	| Iasi      | 1040 | [Iasi, Neamt] -> 94
+	| Neamt     | 1134 | 
+	
+ - A Star Search
+ 
+	Node Expansions: 17
+	Nodes Generated: 43
+	State Repetitions: 22
+	Runtime (ms):  3.156 
+	| Timisoara |    0 | [Timisoara, Lugoj] -> 54
+	| Lugoj     |   54 | [Lugoj, Mehadia] -> 94
+	| Mehadia   |  148 | [Mehadia, Dobreta] -> 37
+	| Dobreta   |  185 | [Dobreta, Craiova] -> 96
+	| Craiova   |  281 | [Craiova, Pitesti] -> 103
+	| Pitesti   |  384 | [Pitesti, Bucharest] -> 108
+	| Bucharest |  492 | [Bucharest, Urziceni] -> 52
+	| Urziceni  |  544 | [Urziceni, Vaslui] -> 229
+	| Vaslui    |  773 | [Vaslui, Iasi] -> 58
+	| Iasi      |  831 | [Iasi, Neamt] -> 94
+	| Neamt     |  925 | 
+	
+	
+
+Análise:
+The algorithm that performs the best in terms of perfomance, except in case 1, is the Greedy Search. However, not always gives the correct solution.
+In that field, the winner is clearly the A Star Search, since it presents always the best path between the two cities. Also, A Star Search also as a reduced cost compared to other algorithms, aside from Greedy Search.
